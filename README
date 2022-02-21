@@ -1,0 +1,5 @@
+go mod init tel_square_gu_hw2
+#go mog created
+
+go mod tidy
+
