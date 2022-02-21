@@ -15,7 +15,6 @@ type sidesNumType int
 const SidesSquare sidesNumType = 4
 const SidesTriangle sidesNumType = 3
 const SidesCircle sidesNumType = 0
-const Pi float64 = 3.141
 
 func CalcSquare(sideLen float64, sidesNum sidesNumType) float64 {
 	var square float64
@@ -24,7 +23,7 @@ func CalcSquare(sideLen float64, sidesNum sidesNumType) float64 {
 	} else if sidesNum == 4 {
 		square = (math.Pow(sideLen, 2))
 	} else if sidesNum == 0 {
-		square = (Pi * math.Pow(sideLen, 2))
+		square = (math.Pi * math.Pow(sideLen, 2))
 	} else {
 		square = (0)
 	}
