@@ -12,9 +12,9 @@ type sidesNumType int
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-const SidesSquare int = 4
-const SidesTriangle int = 3
-const SidesCircle int = 0
+const SidesSquare float64 = 4
+const SidesTriangle float64 = 3
+const SidesCircle float64 = 0
 const Pi float64 = 3.141
 
 func CalcSquare(sideLen float64, sidesNum sidesNumType) float64 {
