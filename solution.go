@@ -1,7 +1,6 @@
 package square
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -19,15 +18,15 @@ const SC int = 0
 const Pi float64 = 3.141
 
 func CalcSquare(sideLen float64, sidesNum sidesNumType) float64 {
-
+	var square float64
 	if sidesNum == 3 {
-		fmt.Println((math.Sqrt(3) * math.Pow(sideLen, 2)) / 4)
+		square = ((math.Sqrt(3) * math.Pow(sideLen, 2)) / 4)
 	} else if sidesNum == 4 {
-		fmt.Println(math.Pow(sideLen, 2))
+		square = (math.Pow(sideLen, 2))
 	} else if sidesNum == 0 {
-		fmt.Println(Pi * math.Pow(sideLen, 2))
+		square = (Pi * math.Pow(sideLen, 2))
 	} else {
-		fmt.Println(0)
+		square = (0)
 	}
-	return
+	return (square)
 }
